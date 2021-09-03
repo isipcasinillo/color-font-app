@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS pallete_db;
+CREATE DATABASE pallete_db;

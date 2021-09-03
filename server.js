@@ -11,9 +11,9 @@ const path = require('path');
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.use(express.json()); // incoming request as JSON OBJECTS //
-app.use(express.urlencoded({ extended: true })); // incoming POST/PUT as STRINGS or ARRAYS //
-app.use(express.static(path.join(__dirname, 'public'))); // set directory as static //
+app.use(express.json());    // incoming request as JSON OBJECTS //
+app.use(express.urlencoded({ extended: true }));    // incoming POST/PUT as STRINGS or ARRAYS //
+app.use(express.static(path.join(__dirname, 'public')));    // set directory as static //
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
