@@ -14,31 +14,39 @@ Pallete.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        name: {
+        color1: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        
-        pallete_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                modle: 'user',  
-                key: 'id',
-            },
+        color2: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        color3: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        font1: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        font2: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        font3: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
     },
     {
-        hooks: {
-          
-        },
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'pallete',
-      }
-    
-)
+    }
+);
 
 
 module.exports = Pallete;
