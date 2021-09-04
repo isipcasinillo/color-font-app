@@ -58,4 +58,18 @@ router.post('/choose', async (req, res) => {
     };
 });
 
+router.delete('/delete/:id', async (req, res) => {
+    try {
+        const UserChoose = await Pallete.destroy({
+            where: {
+                id: req.params.id
+            }
+        });
+        
+        res.status(200).json(UserChoose);
+        
+    } catch (err) {
+        res.status(500).json(err);  
+    };
+});
 module.exports = router;

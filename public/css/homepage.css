@@ -1,0 +1,10 @@
+.box {
+    height: 100px;
+    widtH:100px;
+    border-style: solid;
+}
+
+
+.head{
+    font-family: 'Courier New', Courier, monospace
+}

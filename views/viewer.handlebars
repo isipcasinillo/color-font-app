@@ -1,9 +1,34 @@
-{{#each dishes as |dish|}}
-  <div class="dish col-md-4">
-    {{color1}}
-    {{color2}}
-    {{color3}}
-    {{font1}}
-  </div>
-  
-{{/each}}
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Color 1</th>
+      <th scope="col">Color 2</th>
+      <th scope="col">Color 3</th>
+      <th scope="col">Font 1</th>
+      <th scope="col">Font 2</th>
+      <th scope="col">Font 3</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Import</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      {{#each dishes as |dish|}}
+      <tr>
+      <td>{{color1}}</td>
+      <td>{{color2}}</td>
+      <td>{{color3}}</td>
+      <td>{{font3}}</td>
+      <td>{{font2}}</td>
+      <td>{{font3}}</td>
+      <td><button>DELETE</button></td>
+      <td><button>IMPORT</button></td>
+      </tr>
+      {{/each}}
+    
+  </tbody>
+</table>
+<script>
+  document.title = 'Favorites'
+</script>

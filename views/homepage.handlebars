@@ -5,25 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="createContainer">
     <form class="createColor">
         <label for="color1">Color 1:</label><br>
-        <input type="text" id="color1" name="color1"   placeholder="Color 1"><br>
+        <input type="color" class="color1" id="color1" name="color1" value="#d23232"><br>
         <label for="color2">Color 2:</label><br>
-        <input type="text" id="color2" name="color2"  placeholder="Color 1"><br>
+        <input type="color" class="color2" id="color2" name="color2"><br>
         <label for="color3">Color 3:</label><br>
-        <input type="text" id="color3" name="color3" placeholder="Color 1"><br>
+        <input type="color" class="color3" id="color3" name="color3"><br>
         <br>
         <br>
+
         <label for="font1">Font 1:</label><br>
-        <input type="text" id="font1" name="font1"  placeholder="Font 1"><br><br>
-        <label for="font2">Font 2:</label><br>
-        <input type="text" id="font2" name="font2"  placeholder="Font 2"><br><br>
-        <label for="font3">Font 3:</label><br>
-        <input type="text" id="font3" name="font3"  placeholder="Font 3"><br><br>
-        <input type="submit" value="Submit">
+        <select type="select" class="font1" id="font1" name="font1"><br><br>
+            <option value="">Select One …</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Comic Sans">Courier New</option>
+        </select><br>
+
+        <label for="font1">Font 2:</label><br>
+        <select type="select" class="font2" id="font2" name="font2"><br><br>
+            <option value="">Select One …</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Comic Sans">Courier New</option>
+        </select><br>
+
+        <label for="font1">Font 3:</label><br>
+        <select type="select" class="font3" id="font3" name="font3"><br><br>
+            <option value="">Select One …</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Comic Sans">Courier New</option>
+        </select><br>
+        <button type="submit" value="Submit">Submit</button>
     </form> 
+    </div>
+    <div class="">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="head">This is the Header</div>
+        <p class="para">This is the Paragraph</p>
+        <button class="butto">Button</button>
+    </div>
 </body>
-<script src="./js/create.js"></script>
+
 </html>
