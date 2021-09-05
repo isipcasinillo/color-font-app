@@ -7,6 +7,7 @@ const signupFormHandler = async (event) => {
     const font1 = document.querySelector('#font1').value.trim();
     const font2 = document.querySelector('#font2').value.trim();
     const font3 = document.querySelector('#font3').value.trim();
+
     if (color1 || color2 || color3 || font1 || font2 || font3 ) {
       const response = await fetch('/choose', {
         method: 'POST',
@@ -20,8 +21,9 @@ const signupFormHandler = async (event) => {
         alert('Failed to sign up.');
       }
     }
-  };
-  
+};
+
+
 document
   .querySelector('.createColor')
   .addEventListener('submit', signupFormHandler);
@@ -33,12 +35,11 @@ document
 const selectElement = document.querySelector('.createContainer');
 
 selectElement.addEventListener('change', (event) => {
-
+  event.preventDefault();
   $(".box1").css("backgroundColor", $(".color1").val());
   $(".box2").css("backgroundColor", $(".color2").val());
   $(".butto").css("backgroundColor", $(".color3").val());
   $(".head").css("font-family", $(".font1").val());
   $(".para").css("font-family", $(".font2").val());
   $(".butto").css("font-family", $(".font3").val());
-  
 });

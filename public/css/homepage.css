@@ -1,3 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 .box {
     height: 100px;
     widtH:100px;
@@ -5,6 +12,45 @@
 }
 
 
-.head{
-    font-family: 'Courier New', Courier, monospace
+.preview {
+    position: relative;
+    margin: auto;
+    widtH: 360px;
+    height: 600px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px; 
+    box-shadow: 0px 0px 6px 1px rgba(26, 0, 34, 0.212);
+}
+
+.preview-cut {
+    position: absolute;
+    margin-left: 79px;
+    top: -10px;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 200px;
+    border-radius: 5px 5px 10px 10px;
+}
+.preview-head {
+    
+    width: 360px;
+    height: 80px;
+    background-color: rgba(0, 128, 0, 0.322);
+    border-radius: 20px 20px 0px 0px; 
+}
+
+.preview-bottom {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(255, 158, 158);
+    height: 70px;
+    width: 360px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.preview-button {
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    border-style: solid ;
 }
