@@ -9,91 +9,88 @@
 </head>
 <body>
     <div class="createContainer">
-        <form class="createColor container">
-            <div class="row">
+        <form class="createColor">
+            <div class="customize">
+                    <div class="colorpallete">
+                        <div class="control">
+                            <label for="color1">Color 1:</label><br>
+                            <input type="color" class="color1" id="color1" name="color1" value="#d23232">
+                        </div>
+                        <div class="control">
+                            <label for="color2">Color 2:</label><br>
+                            <input type="color" class="color2" id="color2" name="color2"
+                            value="#66ffcc">
+                        </div>
+                        <div class="control">
+                            <label for="color3">Color 3:</label><br>
+                            <input type="color" class="color3" id="color3" name="color3"
+                            value="#3014ff">
+                        </div>
+                    </div>
+                   
+                
 
-                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="fontpallete">
+                        <div class="fontselector control">
+                            <label for="font1">Header:</label><br>
+                            <select type="select" class="font1 labelx" id="font1" name="font1">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>
+                        </div>
 
-                    <label for="color1">Color 1:</label>
-                    <input type="color" class="color1" id="color1" name="color1" value="#d23232">
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-2">
-                    <label for="color2">Color 2:</label>
-                    <input type="color" class="color2" id="color2" name="color2"
-                    value="#66ffcc">
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-2">
-                    <label for="color3">Color 3:</label>
-                    <input type="color" class="color3" id="color3" name="color3"
-                    value="#3014ff">
-                </div>
-            
-            
-
-                <div class="col-sm-12 col-md-4 col-lg-2 fontselector">
-                    <label for="font1">Font 1:</label>
-                    <select type="select" class="font1" id="font1" name="font1">
-                        <option value="">Select One …</option>
-                        <option value="Arial">Arial</option>
-                        <option value="Times New Roman">Times New Roman</option>
-                        <option value="Comic Sans">Courier New</option>
-                    </select>
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-2 fontselector">
-                    <label for="font1">Font 2:</label>
-                    <select type="select" class="font2" id="font2" name="font2">
-                        <option value="">Select One …</option>
-                        <option value="Arial">Arial</option>
-                        <option value="Times New Roman">Times New Roman</option>
-                        <option value="Comic Sans">Courier New</option>
-                    </select>    
-                </div>
-            
-                <div class="col-sm-12 col-md-4 col-lg-2 fontselector">
-                    <label for="font3">Font 3:</label>
-                    <select type="select" class="font3" id="font3" name="font3">
-                        <option value="">Select One …</option>
-                        <option value="Arial">Arial</option>
-                        <option value="Times New Roman">Times New Roman</option>
-                        <option value="Comic Sans">Courier New</option>
-                    </select>
+                        <div class="fontselector control">
+                            <label for="font1">Paragraph:</label><br>
+                            <select type="select" class="font2 labelx" id="font2" name="font2">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>    
+                        </div>
+                
+                        <div class="fontselector control">
+                            <label for="font3">Button/Misc:</label><br>
+                            <select type="select" class="font3 labelx" id="font3" name="font3">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                
+                <div class="col-">
+                    <button type="submit" value="Submit">Submit</button>
                 </div>
             </div>
 
-            <div class="col-">
-                <button type="submit" value="Submit">Submit</button>
-            </div>
+            
         </form> 
     </div>
 
     <div class="main-container"> <!-- main body-->
-
-        <div class="preview-header box1">
-              
+        <div class="preview-header box1" id="box1">
         </div>
         <div class="preview-text">
             <div class="preview-text-box">
-                <div class="p-head">
+                <div class="p-head head">
                     Transform your website's <br> color & font using ColorAppMode
                 </div>
-                 <div class="p-text">
+                 <div class="p-text para">
                      Create color and fontcombination while viewing<br>
                     how both interact with each other. Colors have an effect<br> depending on your product and also make sure the proper<br> font relates to the feel of the website
                 </div>
-                <button class="p-button box2">Get Started</button>
+                <button class="p-button butto" id="box2">Get Started</button>
             </div>
-            
             <div>
                 <img src="./img/social.svg" alt="" class="svg">
             </div>
         </div>
-
-        
-
-        <div class="preview-footer box3">
+        <div class="preview-footer box3" id="box3">
             <div class="footer-container">
                 <div>
                     <div class="fch">ColorAppMode</div>
@@ -128,7 +125,6 @@
                 </div>             
             </div>
         </div>
-
     </div>
 </body>
 <script src="./js/create.js"></script>

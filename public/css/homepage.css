@@ -52,10 +52,17 @@
 
 .fch {
     color: white;
+    font-size: 1.125rem;
 }
 
 .fcc {
-    color: rgb(138, 138, 138);
+    color: rgb(230, 230, 230);
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 0.550rem;
+}
+
+.fcc div {
+    margin-bottom: 9px;
 }
 
 
@@ -79,6 +86,37 @@
     width: 18.063rem;
 }
 
+.createColor {
+    display: flex;
+    justify-content: center;
+    
+}
+.colorpallete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fontpallete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.customize {
+    background-color: rgb(255, 86, 86);
+    border-radius: 10px;
+    display: flex;
+    width: 43.125rem;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.labelx {
+    width: 65px;;
+    background-color: rgb(235, 235, 255);
+}
+.control {
+    width: 100px;
+}
 @media only screen and (max-width: 600px) {
     .footer-container {
         display: grid;
@@ -92,5 +130,11 @@
     }
     .svg {
         margin-top: 20px;
+    }
+    .customize {
+        flex-direction: column;
+    }
+    .colorpallete {
+        display: flex;
     }
   }
