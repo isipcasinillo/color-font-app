@@ -61,36 +61,3 @@ result.addEventListener('change', function (event) {
             break;
     }
 });
-
-
-
-
-const deleteOnRow = async (event) => {
-  event.preventDefault();
-  
-    
-    $('#.delete-row', $(this).closest("td.table-id")).val()
-
-  if (rowData ) {
-    alert('please input all values')
-    return;
-  } 
-  else {
-      const response = await fetch('/delete', {
-        method: 'DELETE',
-        body: JSON.stringify({ color1}),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        document.location.replace('/');
-      } else {
-        alert('Failed to sign up.');
-      }
-  }  
-};
-
-
-document
-  .querySelector('.delete-row')
-  .addEventListener('click', deleteOnRow);

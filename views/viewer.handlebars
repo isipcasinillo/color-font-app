@@ -16,7 +16,7 @@
   <tbody>
     
       {{#each dishes as |dish|}}
-      <tr class="table">
+      <tr class="tablex">
         <td class="table-id">{{id}}</td>
         <td>{{color1}}</td>
         <td>{{color2}}</td>
@@ -31,8 +31,25 @@
     
   </tbody>
 </table>
-<script src="./js/create.js"></script>
-<script>
-  document.title = 'Favorites'
 
+<script>
+const deleteRow = async (event) => {
+    event.preventDefault();
+
+    if (event.target.hasAttribute('delete-row')) {
+        const id = $('.delete-row').siblings('.table-id').val();
+        const response = await fetch(`/delete/${id}`, {
+          method: 'DELETE',
+          body: JSON.stringify({
+              id,
+          }),
+          headers: {
+              'Content-Type': 'application/json',
+          },
+      });      
+    }
+}
+
+let codex = document.querySelector('.delete-row')
+codex.addEventListener('click', deleteRow)
 </script>
