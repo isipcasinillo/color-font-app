@@ -38,7 +38,7 @@ selectElement.addEventListener('change', (event) => {
   event.preventDefault();
   $(".box1").css("backgroundColor", $(".color1").val());
   $(".box2").css("backgroundColor", $(".color2").val());
-  $(".butto").css("backgroundColor", $(".color3").val());
+  $(".box3").css("backgroundColor", $(".color3").val());
   $(".head").css("font-family", $(".font1").val());
   $(".para").css("font-family", $(".font2").val());
   $(".butto").css("font-family", $(".font3").val());
