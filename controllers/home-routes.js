@@ -65,7 +65,6 @@ router.delete('/delete/:id', async (req, res) => {
                 id: req.params.id
             }
         });
-        
         res.status(200).json(UserChoose);
         
     } catch (err) {

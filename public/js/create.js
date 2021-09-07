@@ -30,7 +30,7 @@ const signupFormHandler = async (event) => {
 
 document
   .querySelector('.createColor')
-  .addEventListener('submit', signupFormHandler);
+  .addEventListener('submit',  signupFormHandler);
 
 
 
