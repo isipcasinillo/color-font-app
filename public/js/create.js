@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 const signupFormHandler = async (event) => {
   event.preventDefault();
   
@@ -64,4 +66,4 @@ result.addEventListener('change', async function (event) {
 });
 
 
-
+});

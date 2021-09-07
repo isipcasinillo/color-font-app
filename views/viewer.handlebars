@@ -14,11 +14,11 @@
       </tr>
     </thead>
     <tbody>
+      {{#each dishes as |dish|}}
+        {{> pallete-details}}
+      {{/each}} 
       
-         {{#each dishes as |dish|}}
-            {{> pallete-details}}
-          {{/each}}
-        
-
     </tbody>
 </table>
+
+<script src="./js/delete.js"></script>
