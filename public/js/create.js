@@ -37,7 +37,8 @@ document
 // Change Color Dynamically //
 
 let result = document.querySelector('.createContainer');
-result.addEventListener('change', function (event) {
+
+result.addEventListener('change', async function (event) {
   event.preventDefault();
     let target = event.target;
     switch (target.id) {
@@ -61,3 +62,6 @@ result.addEventListener('change', function (event) {
             break;
     }
 });
+
+
+

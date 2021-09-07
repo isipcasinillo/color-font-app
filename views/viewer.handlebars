@@ -1,55 +1,24 @@
 
-<table class="table table-striped table-dark">
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Color 1</th>
-      <th scope="col">Color 2</th>
-      <th scope="col">Color 3</th>
-      <th scope="col">Font 1</th>
-      <th scope="col">Font 2</th>
-      <th scope="col">Font 3</th>
-      <th scope="col">Delete</th>
-      <th scope="col">Import</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-      {{#each dishes as |dish|}}
-      <tr class="tablex">
-        <td class="table-id">{{id}}</td>
-        <td>{{color1}}</td>
-        <td>{{color2}}</td>
-        <td>{{color3}}</td>
-        <td>{{font3}}</td>
-        <td>{{font2}}</td>
-        <td>{{font3}}</td>
-        <td><button class="delete-row" id="huh">DELETE</button></td>
-        <td><button>IMPORT</button></td>
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Color 1</th>
+        <th scope="col">Color 2</th>
+        <th scope="col">Color 3</th>
+        <th scope="col">Font 1</th>
+        <th scope="col">Font 2</th>
+        <th scope="col">Font 3</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Import</th>
       </tr>
-      {{/each}}
-    
-  </tbody>
+    </thead>
+    <tbody>
+      
+         {{#each dishes as |dish|}}
+            {{> pallete-details}}
+          {{/each}}
+        
+
+    </tbody>
 </table>
-
-<script>
-const deleteRow = async (event) => {
-    event.preventDefault();
-
-    if (event.target.hasAttribute('delete-row')) {
-        const id = $('.delete-row').siblings('.table-id').val();
-        const response = await fetch(`/delete/${id}`, {
-          method: 'DELETE',
-          body: JSON.stringify({
-              id,
-          }),
-          headers: {
-              'Content-Type': 'application/json',
-          },
-      });      
-    }
-}
-
-let codex = document.querySelector('.delete-row')
-codex.addEventListener('click', deleteRow)
-</script>
