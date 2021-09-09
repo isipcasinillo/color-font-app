@@ -1,0 +1,45 @@
+.customize {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(163, 163, 163, 0.24) 0px 0px 3px 3px;
+    border-radius: 5px;
+    min-width: 22.5rem;
+    justify-content: center;
+    
+}
+
+.colorpallete {
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.colorpallete *  {
+    color:rgb(0, 0, 0);
+}
+
+.fontpallete * {
+    color:rgb(0, 0, 0);
+}
+
+.button {
+    border-style: none;
+    width:5.063rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(107, 107, 107);
+}
+
+.submit-tab {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

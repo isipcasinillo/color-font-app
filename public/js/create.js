@@ -50,11 +50,11 @@ result.addEventListener('change', async function (event) {
             break;
         case 'color2':
           $(".butto").css("backgroundColor", $(".color2").val());
-          $(".hash2").html($(".color1").val())
+          $(".hash2").html($(".color2").val())
             break;
         case 'color3':
           $(".box3").css("backgroundColor", $(".color3").val());
-          $(".hash3").html($(".color1").val())
+          $(".hash3").html($(".color3").val())
             break;
         case 'font1':
           $(".head").css("font-family", $(".font1").val());
