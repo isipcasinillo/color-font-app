@@ -46,12 +46,15 @@ result.addEventListener('change', async function (event) {
     switch (target.id) {
         case 'color1':
           $(".box1").css("backgroundColor", $(".color1").val());
+          $(".hash1").html($(".color1").val())
             break;
         case 'color2':
           $(".butto").css("backgroundColor", $(".color2").val());
+          $(".hash2").html($(".color1").val())
             break;
         case 'color3':
           $(".box3").css("backgroundColor", $(".color3").val());
+          $(".hash3").html($(".color1").val())
             break;
         case 'font1':
           $(".head").css("font-family", $(".font1").val());
@@ -63,7 +66,9 @@ result.addEventListener('change', async function (event) {
           $(".butto").css("font-family", $(".font3").val());
             break;
     }
-});
+}).then(()=> {
+
+})
 
 
 });
