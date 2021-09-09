@@ -22,13 +22,13 @@
    margin: auto;
     
 }
-
+/*
 .window {
-    /* display: flex; */
-    /* flex-direction: row-reverse;
-   justify-content: center; */
+    display: flex; 
+    flex-direction: row-reverse;
+   justify-content: center; 
     
-}
+} */
 .preview-header {
     height: 50px;
     min-width: 22.5rem;
