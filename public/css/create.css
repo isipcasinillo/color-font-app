@@ -1,33 +1,23 @@
-.customize {
-    display:flex;
+.control-main {
+    display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(121, 121, 121);
     box-shadow: rgba(163, 163, 163, 0.24) 0px 0px 3px 3px;
     border-radius: 5px;
-    min-width: 22.5rem;
-    justify-content: center;
-    
+    min-width: 21.875rem;
+    min-height: 34.063rem;
 }
 
-.colorpallete {
-    padding-top: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.desc-sub {
+    font-size: 0.938rem;
 }
 
-.control {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.colorpallete *  {
-    color:rgb(0, 0, 0);
+.head-sub {
+    font-size: 1.875rem;
 }
 
-.fontpallete * {
-    color:rgb(0, 0, 0);
+.color-picker-sub {
+    width: 70.188rem;
 }
 
 .button {
@@ -36,10 +26,4 @@
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(107, 107, 107);
-}
-
-.submit-tab {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
 }

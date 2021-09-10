@@ -3,89 +3,90 @@
     <div class="window">
         <div class="createContainer">
             <form class="createColor">
-                <div class="customize">
-                        <div class="colorpallete">
-                            <div class="control">
-                                <div>
-                                    <label for="color1" class="cont-header">Color 1</label>
-                                </div>
-                                
-                                <div class="cont-label">Select for header</div>
-                                <div class="d-flex justify-content-center align-items-center cont-wrap">
-                                    <input type="color" class="color1 cont-input" id="color1" name="color1" value="#d23232">
-                                    <div class="cont-hash hash1">#d23232</div>
-                                </div>
-                            </div>
-                            <div class="control">
-                                <div>
-                                    <label for="color2" class="cont-header">Color 2</label>
-                                </div>
-                                <div class="cont-label">Select for paragraph</div>
-                                <div class="d-flex justify-content-center align-items-center cont-wrap">
-                                    <input type="color" class="color2 cont-input" id="color2" name="color2" value="#66ffcc">
-                                    <div class="cont-hash hash2">#66ffcc</div>
-                                </div>
-                            </div>
-                            <div class="control">
-                                <div>
-                                    <label for="color3" class="cont-header">Color 3</label>
-                                </div>
-                                <div class="cont-label">Select for misc</div>
-                                <div class="d-flex justify-content-center align-items-center cont-wrap">
-                                    <input type="color" class="color3 cont-input" id="color3" name="color3" value="#3014ff">
-                                    <div class="cont-hash hash3">#3014ff</div>
-                                </div>
+                <div class="control-main">
+                    <div class="d-flex">
+                        <!-- Color 1-->
+                        <div>
+                            <label for="color1" class="head-sub">Color 1</label>
+                            <div class="desc-sub">Select for header</div>
+                            <div class="d-flex justify-content-center align-items-center cont-wrap">
+                            <input type="color" class="color1 cont-input" id="color1" name="color1" value="#d23232">
+                            <div class="cont-hash hash1">#d23232</div>
                             </div>
                         </div>
-                    
-                    
-
-                        <div class="fontpallete">
-                            <div class="fontselector control">
-                                <div>
-                                    <label for="font1" class="cont-header">Font 1</label>
-                                </div>
-                                <div class="cont-label">Select for header</div>
-                                <select type="select" class="font1 labelx text-dark ddown" id="font1" name="font1">
-                                    <option value="">Select</option>
-                                    <option value="Arial">Arial</option>
-                                    <option value="Times New Roman">Times New Roman</option>
-                                    <option value="Comic Sans">Courier New</option>
-                                </select>
+                        <!-- Color 2-->
+                        <div>
+                            <label for="color2" class="head-sub">Color 2</label>
+                            <div class="desc-sub">Select for paragraph</div>
+                            <div class="d-flex justify-content-center align-items-center cont-wrap">
+                                <input type="color" class="color2" id="color2" name="color2" value="#66ffcc">
+                                <div class="cont-hash hash2">#66ffcc</div>
                             </div>
+                        </div>    
+                    </div>
 
-                            <div class="fontselector control">
-                                <div>
-                                    <label for="font2" class="cont-header">Font 2</label>
-                                </div>
-                                <div class="cont-label">Select for paragrah</div>
-                                <select type="select" class="font2 labelx text-dark ddown" id="font2" name="font2">
-                                    <option value="">Select</option>
-                                    <option value="Arial">Arial</option>
-                                    <option value="Times New Roman">Times New Roman</option>
-                                    <option value="Comic Sans">Courier New</option>
-                                </select>   
-                            </div>
-                    
-                            <div class="fontselector control">
-                                <div>
-                                    <label for="font3" class="cont-header">Font 3</label>
-                                </div>
-                                <div class="cont-label">Select for paragrah</div>
-                                <select type="select" class="font3 labelx text-dark ddown" id="font3" name="font3">
-                                    <option value="" class="text-dark">Select</option>
-                                    <option value="Arial">Arial</option>
-                                    <option value="Times New Roman">Times New Roman</option>
-                                    <option value="Comic Sans">Courier New</option>
-                                </select> 
+                    <div class="d-flex">
+                        <!-- Color 3-->
+                        <div>
+                            <label for="color3" class="head-sub">Color 3</label>
+                            <div class="desc-sub">Select for misc</div>
+                            <div class="d-flex justify-content-center align-items-center cont-wrap">
+                                <input type="color" class="color3 cont-input" id="color3" name="color3" value="#3014ff">
+                                <div class="cont-hash hash3">#3014ff</div>
                             </div>
                         </div>
-                    
-                    
-                    <div class="col- submit-tab">
-                        <button type="submit" value="Submit" class="button">Submit</button>
+                        
+                        <!-- Font 1-->
+                        <div>
+                            <label for="font1" class="head-sub">Font 1</label>
+                            <div class="desc-sub">Select for header</div>
+                            <select type="select" class="font1" id="font1" name="font1">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <!-- Font 2 -->
+                        <div>
+                             <label for="font2" class="head-sub">Font 2</label>
+                            <div class="desc-sub">Select for paragrah</div>
+                            <select type="select" class="font2 labelx text-dark ddown" id="font2" name="font2">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>
+                        </div>
+                        <!-- Font 3 -->
+                        <div>
+                             <label for="font3" class="head-sub">Font 3</label>
+                            <div class="desc-sub">Select for paragrah</div>
+                            <select type="select" class="font3 labelx text-dark ddown" id="font3" name="font3">
+                                <option value="">Select</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Comic Sans">Courier New</option>
+                            </select>  
+                        </div>
+                    </div>
+                    <!-- Submit button for control-main-->
+                    <div class=" submit-tab">
+                    <button type="submit" value="Submit" class="button">Submit</button>
                     </div>
                 </div>
+                    
+
+                    
+                    
+                       
+    
+                    
+                
+                
 
                 
             </form> 

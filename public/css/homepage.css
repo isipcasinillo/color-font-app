@@ -3,7 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Overpass', sans-serif; */
 
 /* select {
     border:none;
@@ -133,14 +134,6 @@
     width: 7.5rem;
 }
 
-.cont-label {
-    font-size: 0.75rem;
-}
-
-.cont-header {
-    font-size: 1.25rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
 
 .cont-wrap {
     width: 5.063rem;
@@ -156,6 +149,7 @@
     width: 1.25rem;
     height: 1.25rem;
     border: none;
+    background-color: red;
 }
 
 .cont-hash {
