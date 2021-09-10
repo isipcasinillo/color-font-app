@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     
-    $('.delete-row').click(function() {
+    $('.delete-button').click(function() {
     const id = $(this).data('value')
        fetch(`/delete/${id}`, {
             method: 'DELETE',

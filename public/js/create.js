@@ -38,7 +38,7 @@ document
 
 // Change Color Dynamically //
 
-let result = document.querySelector('.createContainer');
+let result = document.querySelector('.create-container');
 
 result.addEventListener('change', async function (event) {
   event.preventDefault();
@@ -49,7 +49,7 @@ result.addEventListener('change', async function (event) {
           $(".hash1").html($(".color1").val())
             break;
         case 'color2':
-          $(".butto").css("backgroundColor", $(".color2").val());
+          $(".p-button").css("backgroundColor", $(".color2").val());
           $(".hash2").html($(".color2").val())
             break;
         case 'color3':
@@ -63,7 +63,7 @@ result.addEventListener('change', async function (event) {
           $(".para").css("font-family", $(".font2").val());
             break;
         case 'font3':
-          $(".butto").css("font-family", $(".font3").val());
+          $(".p-button").css("font-family", $(".font3").val());
             break;
     }
 }).then(()=> {
