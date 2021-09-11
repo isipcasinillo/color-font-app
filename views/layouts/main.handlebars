@@ -11,20 +11,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="./css/create.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
 </head>
+
 <body>
-    <header class="py-3 hd">
-      <ul class="nav nav-pills d-flex navx justify-content-between">
-        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="/view" class="nav-link">Favorite</a></li>
-      </ul>
+    <header class="py-3 header">
+      <div class="d-flex">
+         <img src="./img/yt.svg" class="icon"alt="">
+         <div class="logo-name">color-font-app</div>
+      </div>
+     
+      <div class="navlinks">
+        <div class="link"><a href="/">Home</a></div>
+        <div class="link"><a href="/create">Create</a></div>
+        <div class="link"><a href="/favorite">Favorite</a></div>
+      </div>
+      <div class="hamburger-menu real-menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
       
     </header>
         {{{body}}}
 </body>
-
-
 </html>

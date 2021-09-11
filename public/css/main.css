@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    max-width: 1380px;
+    margin: auto;
+    justify-content: space-between
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.icon {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    align-items: center
+    
+}
+.link {
+    display: flex;
+    height: 35px;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+}
+.real-menu {
+    padding-right: 20px;
+}
+.navlinks * {
+    margin-right: 10px;
+    
+}
+
+@media only screen and (min-width: 1200px){
+    .navlinks {
+        display: flex;
+        
+    }
+}
+@media only screen and (max-width: 1200px){
+    .navlinks {
+        display: none;
+        
+    }
+}

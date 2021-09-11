@@ -7,22 +7,26 @@ const Pallete = require('../models/Pallete')
 // 'localhost:3001/' //
 router.get('/', async (req, res) => {
     try {
-
-
-
-        res.render('homepage');
+        res.render('home');
+    } catch (err) { // returns error
+        res.status(500).json(err);       
+    };
+});
+router.get('/create', async (req, res) => {
+    try {
+        res.render('create');
     } catch (err) { // returns error
         res.status(500).json(err);       
     };
 });
 
 
-router.get('/view', async (req, res) => {
+router.get('/favorite', async (req, res) => {
     const dishData = await Pallete.findAll().catch((err) => { 
         res.json(err);
       });
         const dishes = dishData.map((dish) => dish.get({ plain: true }));
-        res.render('viewer', { dishes });
+        res.render('favorite', { dishes });
 });
 
 router.post('/create', async (req, res) => {

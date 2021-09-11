@@ -10,6 +10,8 @@
 .table {
     font-size: 0.625rem;
     padding: 20px 5px 5px 0px;
+    width: 1400px;
+    margin: auto;
 }
 
 .delete-button {
