@@ -12,14 +12,29 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
     <link rel="stylesheet" href="./css/create.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
+<style>
+    .menu-links {
+      display: none;
+      background-color: rgb(170, 170, 170);
+      
+    }
+    .showmenu:hover{
+      cursor: pointer;
+    }
+    @media only screen and (min-width: 1200px){
+    .real-menu-stack {
+        display: none;
+    }
+    }
+</style>
 <body>
     <header class="py-3 header">
       <div class="d-flex">
-         <img src="./img/yt.svg" class="icon"alt="">
+         <img src="./img/cfalogo.svg" class="icon"alt="">
          <div class="logo-name">color-font-app</div>
       </div>
      
@@ -28,13 +43,30 @@
         <div class="link"><a href="/create">Create</a></div>
         <div class="link"><a href="/favorite">Favorite</a></div>
       </div>
-      <div class="hamburger-menu real-menu">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
+      <div class="hamburger-menu real-menu mb-2">
+        <div class="showmenu">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
       </div>
       
     </header>
+    <div class="real-menu-stack">
+      <div class="menu-links d-flex flex-column align-items-center">
+        <div class="link"><a href="/">Home</a></div>
+        <div class="link"><a href="/create">Create</a></div>
+        <div class="link"><a href="/favorite">Favorite</a></div>
+      </div>
+    </div>
         {{{body}}}
 </body>
+<script>
+  $(document).ready( ()=> {
+    $(".showmenu").on("click", () => {
+      $(".real-menu-stack").toggle()
+    })
+  })
+    
+</script>
 </html>

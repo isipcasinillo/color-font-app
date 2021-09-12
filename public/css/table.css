@@ -1,5 +1,6 @@
 .viewer {
-    min-width: 21.875rem;
+    /* min-width: 21.875rem; */
+    
     font-size: 0.625rem;
     padding: 20px 5px 5px 0px;
 }
@@ -10,7 +11,7 @@
 .table {
     font-size: 0.625rem;
     padding: 20px 5px 5px 0px;
-    width: 1400px;
+    width: auto;
     margin: auto;
 }
 
@@ -32,3 +33,4 @@
         width: 80px;
     }
 }
+
